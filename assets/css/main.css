@@ -1,0 +1,1106 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans.ttf');
+}
+
+@font-face {
+    font-family: 'MeriendaOne';
+    src: url('../fonts/MeriendaOne.ttf');
+}
+
+@font-face {
+    font-family: 'GreatVibes';
+    src: url('../fonts/GreatVibes.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    --pink_color: #f68db9;
+    --brown_color: #4f1a00;
+    --blue_color: #5fcac7;
+    --light_pink_color: #ff9fbf;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-----------------HOME PAGE CSS START-----------------*/
+.fa-angle-up {
+    color: var(--pink_color);
+    border: 6px solid var(--pink_color);
+    padding: 12px 20px;
+    border-radius: 50%;
+}
+
+form .esubmit {
+    background: var(--brown_color);
+    color: white;
+    border: 2px solid var(--pink_color);
+    font-size: 20px;
+    font-family: 'OpenSans';
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 55px;
+    width: 150px;
+}
+
+.cake_submit:hover {
+    cursor: pointer;
+    font-size: 20px;
+    background: var(--pink_color);
+    color: var(--brown_color);
+    border-color: var(--brown_color);
+}
+
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    text-align: center;
+    background: url(../images/loader.svg) center no-repeat #fff;
+}
+
+/*main start*/
+
+.banner {
+    width: 100%;
+    height: calc(100vh - 200px);
+}
+
+.swal-text {
+    font-size: 20px;
+    text-align: center;
+}
+
+.heading_style {
+    text-align: center;
+    font-family: MeriendaOne;
+    font-size: 40px;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.heading_style::before {
+    content: url(../images/llicon.png);
+    vertical-align: middle;
+}
+
+.heading_style::after {
+    content: url(../images/rricon.png);
+    vertical-align: middle;
+}
+
+.
+
+/*Slider css Start*/
+.slick-dots li button,
+.slick-next,
+.slick-previous {
+    display: none;
+}
+
+.home_slider img {
+    /*width: 1920px;*/
+    /* width: calc(200vh);*/
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+.home_slider {
+    width: 100%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+*/
+/*Slider Css End*/
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category .category_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 330px;
+}
+
+.category .category_content h1 {
+    font-size: 40px;
+    font-family: 'MeriendaOne';
+    color: black;
+}
+
+.category .category_content p {
+    font-size: 22px;
+    color: black;
+    margin: -80px 0px -30px 0px;
+    text-align: center;
+    width: 620px;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+.category_main_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.category_main_wrapper .category_inner {
+    width: 220px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.category_main_wrapper .category_inner p {
+    font-size: 22px;
+    color: #daac5b;
+    margin-top: 50px;
+    font-family: 'Kaushan Script';
+}
+
+.category_main_wrapper .category_inner img {
+    transition: all 0.5s ease-in-out;
+}
+
+.category_main_wrapper .category_inner img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale3D(1.1, 1.1, 1);
+}
+
+/*-----------------TESTIMONIALS PAGE CSS START-----------------*/
+
+.testimonials {
+    padding: 150px 0;
+    background-image: url('../images/curvebg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    max-height: 350px;
+}
+
+.testimonials h1 {
+    text-align: center;
+    color: white;
+    font-family: 'MeriendaOne';
+    font-size: 40px;
+}
+
+.testimonial blockquote {
+    width: 60%;
+    line-height: 1.5em;
+    height: calc(100vh-20px);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+    padding: 20px 0px;
+    color: white;
+    font-family: 'OpenSans';
+}
+
+.testimonial cite {
+    font-size: 25px;
+    color: white;
+    font-family: 'MeriendaOne';
+}
+
+.testimonial blockquote p:first-letter {
+    font-size: 45px;
+    font-family: 'MeriendaOne';
+}
+
+
+/*-----------------TESTIMONIALS PAGE CSS END-----------------*/
+
+/*Prices Start*/
+.cake_price {
+    height: auto;
+    width: 300px;
+    background: var(--blue_color);
+    border: 1px solid var(--blue_color);
+    border-radius: 10px;
+}
+
+.price_inner {
+    position: relative;
+}
+
+.price_inner_sub-div {
+    text-align: center;
+}
+
+.price_wrapper .price_inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.price_wrapper {
+    margin-bottom: 100px;
+}
+
+.price_wrapper .price_inner .cake_price .top_content {
+    font-family: 'MeriendaOne';
+    font-size: 20px;
+}
+
+.price_wrapper .price_inner .cake_price .bottom_content p {
+    font-size: 18px;
+    font-family: 'OpenSans';
+}
+
+.price_wrapper .price_inner .cake_price .bottom_content p:nth-of-type(1) {
+    font-family: 'MeriendaOne';
+    font-size: 30px;
+}
+
+.price_wrapper .price_inner .cake_price .bottom_content p:nth-of-type(2) {
+    background: var(--pink_color);
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: 'OpenSans';
+    color: white;
+}
+
+.cake_price .top_content {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.cake_price .bottom_content {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.cake_price .bottom_content a {
+    color: white;
+    background: var(--pink_color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 50%;
+
+}
+
+/*Prices end*/
+
+/*-----------------HOME PAGE CSS END-----------------*/
+/*-----------------ABOUTUS PAGE CSS START-----------------*/
+.about_banner {
+    background: url(../images/banner/about_banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.ourmission_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 450px;
+    padding: 50px;
+}
+
+.ourmission h1 {
+
+    font-size: 40px;
+    font-family: 'MeriendaOne';
+    margin-top: 20px;
+}
+
+.ourmission p {
+    font-size: 20px;
+    color: black;
+    line-height: 28px;
+    margin-bottom: 50px;
+    width: 45%;
+    font-family: 'OpenSans';
+    text-align: center;
+}
+
+
+.ourteam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ourteam .ourteam_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 330px;
+}
+
+.ourteam .ourteam_content h1 {
+    font-size: 40px;
+    font-family: 'MeriendaOne';
+}
+
+.ourteam .ourteam_content p:nth-of-type(1) {
+    font-size: 20px;
+    margin: -80px 0px -30px 0px;
+    text-align: center;
+    width: 620px;
+    font-family: 'OpenSans';
+    line-height: 1.5em;
+}
+
+.flip_wrapper {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.flip-card:hover{
+    cursor: pointer;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    border-radius: 50%;
+    border: 6px solid var(--pink_color);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-inner img {
+    border-radius: 50%;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+
+.flip-card-back {
+    color: var(--light_pink_color);
+    border-radius: 50%;
+    transform: rotateY(180deg);
+    z-index: 1;
+    margin-top: 40%;
+}
+
+.flip-card-back p:nth-of-type(1) {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'OpenSans';
+}
+
+.flip-card-back p:nth-of-type(2) {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--brown_color);
+    font-family: 'OpenSans';
+}
+
+.about_cake_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/pinkbg.png) no-repeat;
+    background-size: cover;
+}
+
+.about_cake_wrapper img.cake {
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.about_cake_wrapper img.cake:hover {
+    transform: rotate(50deg);
+}
+
+.about_cake_wrapper .cake_content {
+    width: 30%;
+    margin: 100px;
+}
+
+.about_cake_wrapper .cake_content h1 {
+    font-size: 30px;
+    font-family: 'MeriendaOne';
+    color: white;
+}
+
+.about_cake_wrapper .cake_content p:nth-of-type(1),
+.about_cake_wrapper .cake_content p:nth-of-type(2) {
+    font-family: 'OpenSans', serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 30px 0 20px 0;
+    color: white;
+}
+
+
+/*-----------------ABOUTUS PAGE CSS END-----------------*/
+
+/*gallery css start*/
+
+.category_container ul {
+    width: 700px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.gallery_wrapper .category_container .active {
+    color: var(--pink_color);
+}
+
+.category_item {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    font-family: MeriendaOne;
+    align-items: center;
+    
+}
+
+.category_item:nth-of-type(1)::before {
+
+    content: url('../images/llicon.png');
+}
+
+.category_item:nth-last-of-type(1)::after {
+    content: url('../images/rricon.png');
+}
+
+.category_item:hover {
+    color: #ff91a4;
+}
+
+.category_item::after {
+    content: url('../images/icon.png');
+    padding: 0px 20px;
+}
+
+.block_container {
+
+    display: block;
+    margin: 0px auto;
+    height: 1200px;
+}
+
+.bakery_item {
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 2px;
+    width: 25%;
+    border-radius: 15px;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.hide {
+    transform: scale(0);
+    width: 0;
+    padding: 0;
+    transition: all 1s ease-in;
+}
+
+#lightgallery {
+    margin-top: 2%;
+    text-align: center;
+}
+
+#lightgallery img {
+    border: 3px solid #ff91a4;
+    transition: all 1s ease;
+
+}
+
+#lightgallery img:hover,
+.gallery_inner img:hover {
+
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/*gallery css end*/
+/*faqs css start*/
+
+.ui-state-default {
+    background-color: var(--pink_color);
+    border: 2px solid var(--light_pink_color);
+}
+
+.ui-accordion .ui-accordion-header {
+    font-size: 20px;
+}
+
+.ui-widget-content {
+    font-size: 18px;
+}
+
+.ui-state-active {
+    font-weight: 600px;
+}
+
+.accordion {
+    width: 50%;
+    margin: 20px;
+}
+
+.faq_banner {
+    background: url(../images/banner/faq_banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.faq_inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.terms_section ol {
+    margin: 50px 0px 50px 20%;
+    width: 60%;
+}
+
+ol li:first-letter {
+    font-family: 'GreatVibes';
+    font-size: 50px;
+    color: var(--brown_color);
+}
+
+ol li {
+    list-style-image: url(../images/icon.png);
+    list-style-position: inside;
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'Open Sans';
+
+}
+
+.terms_section p {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    color: var(--pink_color);
+    margin-bottom: 50px;
+}
+
+.faq_contact {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--brown_color);
+    font-family: 'MeriendaOne';
+}
+
+/*faqs css end*/
+/*cake css start*/
+
+.cakebanner {
+    background: url(../images/cakes/cake.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.cake_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cake_container h2 {
+    font-family: 'MeriendaOne';
+    text-align: center;
+    font-size: 30px;
+    padding-top: 43px;
+    padding-bottom: 10px;
+    color: var(--pink_color);
+}
+
+.cake_container p {
+    font-family: 'MeriendaOne';
+    text-align: center;
+    font-size: 20px;
+}
+
+div.container div.gallery {
+    display: none;
+}
+
+.cake_orderform p {
+    text-align: center;
+    font-family: 'OpenSans';
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.form_heading {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    color: #fb8a9d;
+    font-size: 15px;
+    font-family: 'MeriendaOne';
+    margin-top: 14px;
+    width: 300px;
+    max-width: 100%;
+    border-radius: 6px;
+    border: 1px solid #af9c9c;
+    padding: 0 10px;
+}
+
+form input {
+    height: 45px;
+}
+
+form .cake_submit,
+.contact_form .submit {
+    background: var(--brown_color);
+    color: white;
+    border: 2px solid var(--pink_color);
+    font-size: 20px;
+    font-family: 'OpenSans';
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 55px;
+    width: 150px;
+}
+
+.cake_submit:hover {
+    cursor: pointer;
+    font-size: 20px;
+    background: var(--pink_color);
+    color: var(--brown_color);
+    border-color: var(--brown_color);
+}
+
+div.form_selection {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 14px;
+}
+
+div.selection {
+    padding-bottom: 14px;
+    font-size: 20px;
+    font-family: 'MeriendaOne';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+select#select_item,
+select#selection {
+    font-size: 16px;
+    font-family: 'MeriendaOne';
+    border-radius: 6px;
+    border: 1px solid #edecec;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+select#selection {
+    margin-top: 27px;
+}
+
+form#order_form p {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 21px;
+    font-family: 'MeriendaOne';
+    color: brown;
+}
+
+div.cake_container img.birthday_cake:hover,
+img.wed_cake:hover,
+img.baby_cake:hover {
+    opacity: 0.7;
+}
+
+/*cake css end*/
+/*Contact us css start*/
+.contact_banner {
+    background: url(../images/banner/banner_contact2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact_main_wrapper h3 {
+    font-family: 'MeriendaOne';
+    text-align: center;
+    font-size: 30px;
+}
+
+.container .opening-hours p {
+    margin-bottom: 10px;
+    margin-top: 25px;
+    line-height: 1.5;
+    font-size: 23px;
+    text-align: center;
+}
+
+form {
+    transition: all 4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control {
+    color: green;
+    font-size: 15px;
+    font-family: 'MeriendaOne';
+    margin-top: 14px;
+    width: 300px;
+    max-width: 100%;
+    border-radius: 6px;
+    border: 1px solid #edecec;
+    padding: 0 10px;
+}
+
+.contact_form .submit:hover {
+    cursor: pointer;
+    font-size: 20px;
+    background: var(--pink_color);
+    color: var(--brown_color);
+    border-color: var(--brown_color);
+}
+
+.contact_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 100px 0px;
+}
+
+.contact_form_wrapper input,
+.contact_form_wrapper textarea {
+    width: 300px;
+}
+
+.contact_container .opening-hours p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    line-height: 1.5;
+    font-size: 23px;
+    text-align: center;
+
+}
+
+.contact_form_wrapper {
+    height: 300px;
+}
+
+.our-contact address {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 230px;
+    line-height: 1.5;
+    font-size: 23px;
+    text-align: center;
+}
+
+.our-contact div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.our-contact address a {
+    color: black;
+    text-decoration: none;
+}
+
+iframe {
+    width: 100%;
+}
+
+/*Contact us css end*/
+
+
+/*Cup Cake css start*/
+
+.cupcake_banner {
+    background: url(../images/cupcake/banner7.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.cupcake_gallery_inner,
+.cake_wrapper .cake_container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cupcake_gallery_inner .sub-div,
+.cake_wrapper .cake_container .sub-div {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 400px;
+}
+
+.cupcake_gallery_inner .sub-div p,
+.cake_wrapper .cake_container .sub-div p {
+
+    text-align: center;
+    font-size: 20px;
+    font-family: MeriendaOne;
+    color: var(--light_pink_color);
+}
+
+.cupcake_gallery_inners .sub-div a {
+    text-decoration: none;
+}
+
+.cupcake_gallery_inner .sub-div img,
+.cake_wrapper .cake_container .sub-div img {
+    border: 3px solid #ff91a4;
+    transition: all 1s ease;
+    box-sizing: border-box;
+    padding: 3px;
+    height: 300px;
+    width: 220px;
+    margin: 2px;
+
+    border-radius: 15px;
+}
+
+/*Cup Cake css end*/
+
+/*Coffe css start*/
+
+.coffee_banner {
+    background: url(../images/coffee/coffee-hero.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-m-span {
+    font-family: 'MeriendaOne';
+    font-size: 30pt;
+}
+
+.mypara {
+    font-family: 'OpenSans';
+    color: black;
+    font-size: 12pt;
+    text-align: center;
+    line-height: 2;
+}
+
+.my-para-2 {
+    font-family: 'OpenSans';
+    font-size: 12pt;
+    color: #ffffff;
+    line-height: 2;
+}
+
+/*----section-2--start----*/
+
+.wrapper-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.sec-2-span {
+    font-family: 'MeriendaOne';
+    font-size: 24pt;
+}
+
+.color_style {
+    color: var(--pink_color);
+
+    font-weight: bold;
+}
+
+.icon-div {
+    margin-top: -20px;
+}
+
+.child-div {
+    height: 150px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*----section-4-start----*/
+.bg_image {
+    height: 765px;
+    background-image: url('../images/coffee/sec-3-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-3-div {
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-evenly;
+    font-family: 'MeriendaOne';
+    font-size: 26pt;
+    color: #ffffff;
+}
+
+.coffee-bean {
+    background-image: url('../images/coffee/coffee-bean.jpg');
+    background-repeat: no-repeat;
+}
+
+.image-box {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hot-coffee {
+    background-image: url('../images/coffee/hot-coffee.jpg');
+    background-repeat: no-repeat;
+}
+
+.chocolate {
+    background-image: url('../images/coffee/chocolate.jpg');
+    background-repeat: no-repeat;
+}
+
+.dessert {
+    background-image: url('../images/coffee/dessert.jpg');
+    background-repeat: no-repeat;
+}
+
+section:nth-of-type(5) {
+    height: 1300px;
+}
+
+.sec-4-first-div {
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-4-heading {
+    font-family: 'MeriendaOne';
+    font-size: 32pt;
+}
+
+.sec-4-container {
+    background-image: url('../images/coffee/bg-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.sec-4-inner-div {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cup {
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.cup:hover {
+    transform: rotate(35deg);
+}
+
+/*Coffee css end*/
+

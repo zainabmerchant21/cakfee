@@ -1,0 +1,121 @@
+.footer_links li {
+    list-style-type: none;
+    font-family: "OpenSans";
+    margin: 5px 0px;
+    text-align: center;
+}
+
+.footer_inner .a2a_default_style a {
+    padding: 10px;
+}
+
+.footer_inner {
+    min-height: 200px;
+}
+
+.a2a_svg.a2a_s__default.a2a_s_pinterest,
+.a2a_svg.a2a_s__default.a2a_s_google_plus,
+.a2a_svg.a2a_s__default.a2a_s_twitter,
+.a2a_svg.a2a_s__default.a2a_s_facebook,
+.a2a_svg.a2a_s__default.a2a_s_a2a {
+    background-color: white !important;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+path {
+    fill: var(--brown_color);
+}
+
+.footer_links li a {
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+.footer_links li a:hover {
+    cursor: pointer;
+    color: var(--pink_color);
+
+}
+
+
+.subscription_form label,
+.share_media p {
+    color: white;
+    font-family: 'MeriendaOne';
+    font-size: 30px;
+    text-align: center;
+}
+
+.share_media p {
+    padding-bottom: 20px;
+}
+
+.subscription_form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+}
+
+.semail {
+    font-size: 18px;
+    padding: 0 10px;
+    max-width: 100%;
+    margin: auto;
+    min-width: 160px;
+    min-height: 42px;
+    border-radius: 6px;
+}
+
+.submit {
+    padding: 10px 15px;
+    text-align: center;
+    background: var(--brown_color);
+    border: 2px solid var(--pink_color);
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+
+}
+
+.submit:hover {
+    border: 2px solid var(--brown_color);
+    cursor: pointer;
+    font-size: 16px;
+    background: var(--pink_color);
+    color: var(--brown_color);
+    border-radius: 6px;
+}
+
+
+.footer {
+    background: url(../images/footer_img.png) no-repeat;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+
+.footer .inner {
+    background: url(../images/bcurvebg.png) no-repeat;
+    height: 400px;
+    width: 100%;
+    opacity: 0.8;
+    background-size: cover;
+}
+
+.footer_bg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 220px;
+}
